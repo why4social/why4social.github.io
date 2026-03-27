@@ -7,13 +7,17 @@ website:
   site-url: "https://why4social.github.io"
   navbar:
     left:
-      - text: "POSTS"
-        href: index.html
       - text: "ABOUT"
         href: about.html
-    right:
-      - icon: github
+      - text: "RESEARCH"
+        href: research.html
+      - text: "GITHUB"
         href: https://github.com/why4social
+    background: "#0e0e0e"
+    foreground: "#d0d0d0"
+  page-footer:
+    center: "COPYRIGHT © 2025 WHY4SOCIAL. ALL RIGHTS RESERVED."
+    background: "#0e0e0e"
 
 format:
   html:
@@ -22,4 +26,5 @@ format:
     css: styles.css
     toc: false
     grid:
-      body-width: 900px
+      body-width: 1100px
+      margin-width: 0px

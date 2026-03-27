@@ -1,47 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
 
+/* 기본 */
 body {
   font-family: 'Space Grotesk', sans-serif;
-  background-color: #111111;
-  color: #e0e0e0;
-  letter-spacing: 0.02em;
+  background-color: #0e0e0e;
+  color: #cccccc;
+  letter-spacing: 0.04em;
 }
 
 /* 네비게이션 */
 .navbar {
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
+  background-color: #0e0e0e !important;
+  border-bottom: 1px solid #222;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  background-color: #111111 !important;
+  padding: 1.2rem 2rem;
 }
 
-/* 포스트 카드 그리드 */
-.quarto-listing-cols-3 {
-  gap: 1.5rem;
+.navbar-brand {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #ffffff !important;
 }
 
+.navbar .nav-link {
+  color: #999 !important;
+}
+
+.navbar .nav-link:hover {
+  color: #fff !important;
+}
+
+/* 카테고리 필터 탭 */
+.quarto-listing-filter,
+#quarto-listing-category {
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.category.active {
+  color: #ffffff !important;
+  border-bottom: 1px solid #fff;
+}
+
+/* 포스트 카드 */
 .card {
-  background-color: #1a1a1a !important;
-  border: 1px solid rgba(255,255,255,0.06) !important;
-  border-radius: 4px !important;
-  transition: transform 0.2s ease;
+  background-color: #141414 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  transition: opacity 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-3px);
+  opacity: 0.75;
 }
 
-/* 제목 스타일 */
-h1, h2, h3 {
-  font-weight: 500;
-  letter-spacing: 0.05em;
+.card-img-top {
+  border-radius: 0 !important;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+/* 카드 텍스트 */
+.card-body {
+  padding: 0.8rem 0 !important;
+}
+
+.card-title {
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase;
+  color: #e8e8e8 !important;
+  margin-bottom: 0.3rem !important;
+}
+
+.card-text {
+  font-size: 0.75rem;
+  color: #888;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.listing-date {
+  font-size: 0.7rem;
+  color: #666;
+  letter-spacing: 0.08em;
+}
+
+/* 그리드 간격 */
+.quarto-listing-cols-3 {
+  gap: 2px !important;
+}
+
+/* 헤더 영역 제거 */
+#quarto-content h1.title {
+  display: none;
 }
 
 /* 푸터 */
 .nav-footer {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  color: #666;
+  background-color: #0e0e0e !important;
+  border-top: 1px solid #222;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555 !important;
+  padding: 1.5rem;
 }
