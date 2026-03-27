@@ -1,0 +1,29 @@
+/* css styles */
+/* 폰트 — anzi 블로그 스타일 */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* 포스트 카드 그리드 */
+.quarto-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* 네비게이션 — 심플하게 */
+.navbar {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* 포스트 제목 */
+h1, h2, h3 {
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}

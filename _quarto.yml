@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs   # GitHub Pages 배포용
+
+website:
+  title: "WHY4SOCIAL"
+  description: "Academic notes & thoughts"
+  navbar:
+    left:
+      - text: "Posts"
+        href: index.html
+      - text: "About"
+        href: about.html
+      - text: "Research"
+        href: research.html
+  page-footer:
+    center: "© 2025 why4social"
+
+format:
+  html:
+    theme:
+      dark: darkly      # 다크 테마 (Bootswatch)
+    css: styles.css     # 커스텀 CSS
+    toc: true
+    code-fold: true     # R 코드 접기 (학술용)
+    fontsize: 1rem
+    grid:
+      sidebar-width: 0px
+      body-width: 900px
